@@ -27,6 +27,14 @@ const babelConfig = {
 }
 webpackConfig.module.rules.push(babelConfig);
 
+// CSS setup
+const cssConfig = {
+    test: /\.css$/,
+    exclude: /node_modules/,
+    use: ['style-loader', 'css-loader']
+}
+webpackConfig.module.rules.push(cssConfig);
+
 // setup html-webpack-plugin
 const htmlWebpackPluginConfig = new HtmlWebPackPlugin({
     template: path.join(config.DIR_SRC, 'index.html'),
