@@ -1,0 +1,33 @@
+.form-container{
+    padding: 8px;
+}
+
+input[type="search"]{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #e52a6f;
+    background: transparent;
+    color: white;
+    caret-color: white;
+}
+
+.search-button{
+    padding:8px;
+    background-color: #e52a6f;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid #e52a6f;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+  }
+  ::-moz-placeholder {
+    color: white;
+  }
+  :-ms-input-placeholder {
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }

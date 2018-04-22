@@ -1,0 +1,29 @@
+nav{
+    background-color: #675682;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-list-item{
+    align-self: center;
+    margin: 12px;
+    list-style-type: none;
+}
+
+.navbar-search-box{
+    flex: 1;
+}
+
+@media all and (max-width:320px){
+    .navbar-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-list-item{
+        flex-basis: 100%;
+    }
+}

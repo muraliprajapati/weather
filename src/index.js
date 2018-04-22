@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import MainComponent from "./components/MainComponent";
 import './style.css';
 
 const ROOT_NODE = document.getElementById('root');
 
-const HelloWorld = (props) => {
-    return (
-        <div><p>Simple Weather App</p></div>
-    )
-}
 
-ReactDOM.render(<HelloWorld />, ROOT_NODE);
+ReactDOM.render(<MainComponent />, ROOT_NODE);

@@ -1,4 +1,18 @@
-p{
-    color: #C2C2C2;
-    font-size: 24px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+/* Global Colors */
+
+.bg-primary{
+    background-color: #675682;
+}
+
+.bg-accent{
+    background-color: #e52a6f;
 }
