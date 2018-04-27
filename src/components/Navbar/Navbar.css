@@ -5,6 +5,8 @@ nav{
 .navbar-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-list-item{
@@ -13,11 +15,13 @@ nav{
     list-style-type: none;
 }
 
-.navbar-search-box{
-    flex: 1;
+.city-name{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
 }
 
-@media all and (max-width:320px){
+@media all and (max-width:480px){
     .navbar-container{
         flex-direction: column;
         align-items: center;
@@ -25,5 +29,13 @@ nav{
 
     .navbar-list-item{
         flex-basis: 100%;
+    }
+
+    .navbar-list-item {
+        order: 2;
+    }
+
+    .city-name{
+        order: 1;
     }
 }

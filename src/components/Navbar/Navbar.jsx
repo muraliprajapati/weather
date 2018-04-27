@@ -12,8 +12,11 @@ class Navbar extends Component {
         return (
             <nav>
                 <ul className="navbar-container">
-                    <li className="navbar-list-item navbar-search-box">
+                    <li className="navbar-list-item">
                         <SearchBox />
+                    </li>
+                    <li className="navbar-list-item city-name">
+                        <span className="">New York,US</span>
                     </li>
                     <li className="navbar-list-item">
                         <UnitComponent />

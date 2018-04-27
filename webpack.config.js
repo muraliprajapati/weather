@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
 const config = require('./config');
 
 
@@ -13,7 +12,6 @@ const webpackConfig = {
     module: {
         rules: []
     },
-    plugins: [],
     devServer: {
         contentBase: config.DIR_DIST
     }
@@ -34,15 +32,5 @@ const cssConfig = {
     use: ['style-loader', 'css-loader']
 }
 webpackConfig.module.rules.push(cssConfig);
-
-// setup html-webpack-plugin
-const htmlWebpackPluginConfig = new HtmlWebPackPlugin({
-    template: path.join(config.DIR_SRC, 'index.html'),
-    filename: path.join(config.DIR_DIST, 'index.html'),
-    inject: 'body'
-})
-webpackConfig.plugins.push(htmlWebpackPluginConfig);
-
-
 
 module.exports = webpackConfig;

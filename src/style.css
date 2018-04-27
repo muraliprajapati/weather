@@ -6,13 +6,3 @@
 body{
     font-family: Helvetica, sans-serif;
 }
-
-/* Global Colors */
-
-.bg-primary{
-    background-color: #675682;
-}
-
-.bg-accent{
-    background-color: #e52a6f;
-}
