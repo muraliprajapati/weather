@@ -4,19 +4,20 @@ class SearchBox extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            queryString: ''
+            query: ''
         };
     }
 
     handleQueryStringChange = (e) => {
         this.setState({
-            queryString: e.target.value
+            query: e.target.value
         })
     }
 
     handleSearch = (e) => {
         e.preventDefault();
-        console.log('Fetch weather data for:', this.state.queryString);
+        console.log('Fetch weather data for:', this.state.query);
+        this.props.searchSubmit(this.state.query);
     }
 
     render() {
@@ -24,8 +25,8 @@ class SearchBox extends Component {
             <div className="form-container">
                 <form onSubmit={this.handleSearch}>
                     <input
-                        type="search"
-                        value={this.state.queryString}
+                        type="text"
+                        value={this.state.query}
                         name="searchBox"
                         id="searchBox"
                         placeholder="Enter City or Zipcode"

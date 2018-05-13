@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     color: white;
-    border: 1px solid #e52a6f;
+    border: 1px solid #fe1743;
     border-radius: 8%;
     padding: 2px;   
 }
@@ -17,12 +17,12 @@
 }
 
 .unit-value:hover{
-    background-color: #e52a6f;
+    background-color: #fe1743;
     transition: all 0.3s;   
 }
 
 .active-unit{
-    background-color: #e52a6f;
+    background-color: #fe1743;
     font-weight: bold;
 
 }

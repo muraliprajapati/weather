@@ -1,0 +1,28 @@
+.graph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.graph{
+    padding: 0px 4px;
+    margin-top: 4px;
+}
+
+.graph-info{
+    align-self: center;
+    margin: 10px;
+}
+
+.graph-info > span{
+    padding: 4px;
+}
+
+@media all and (max-width:480px){
+    .graph-info span, .graph-info i{
+        font-size: 0.8rem;
+        padding: 2px;
+        margin: 0px;
+    }
+}

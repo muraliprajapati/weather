@@ -1,0 +1,147 @@
+.today-component-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.icon-desc-container,.date-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-container{
+    font-size: 1.3rem;
+}
+
+.weather-icon,.weather-desc{
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.weather-icon{
+    font-size: 11em;
+}
+
+.weather-desc{
+    font-size: 1.3rem;
+    text-transform:capitalize;
+}
+
+.temp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.temp-text{
+    font-size: 8rem;
+    align-self: center;
+}
+
+.high-low-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.high-low-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4px;
+    border-radius: 2px;
+    border-bottom:3px solid #fe1743; 
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.high-low-item i {
+    font-size: 1.3rem;
+}
+
+.extra-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+
+.extra-info-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2px;
+    border-bottom:3px solid #fe1743; 
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.high-low-item > span,.extra-info-item > span{
+    padding: 4px;
+    margin: 4px;
+}
+
+.wi-direction-up{
+    color: #48c5b5;
+}
+.wi-direction-down{
+    color: #37a72b;
+}
+.wi-humidity{
+    color: #00acee;
+}
+.wi-barometer{
+    color: #fdc201;
+}
+.wi-strong-wind{
+    color: #06d79d;
+}
+
+@media all and (max-width:768px){
+    .today-component-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .today-component-container > div{
+        margin: 10px 0px;
+    }
+
+    .date-container,.extra-info-container{
+        flex: 100%;
+    }
+
+    .icon-desc-container,.temp-container{
+        flex: 50%;
+    }
+
+    .high-low-container{
+        justify-content: center;
+    }
+
+    .extra-info-container{
+        flex-direction: row;
+    }
+    .extra-info-item{
+        flex: 30%;
+    }
+
+}
+@media all and (max-width:480px){
+    .today-component-container{
+        flex-direction: column;
+    }
+
+    .extra-info-container{
+        flex-direction: column;
+    }
+
+    .extra-info-item{
+        flex: 100%
+    }
+}

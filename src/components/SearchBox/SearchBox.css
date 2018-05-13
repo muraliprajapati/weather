@@ -2,10 +2,14 @@
     padding: 8px;
 }
 
-input[type="search"]{
+form{
+  border-bottom: 1px solid #fe1743;
+}
+
+input[type="text"]{
     padding: 8px;
     border: none;
-    border-bottom: 1px solid #e52a6f;
+    outline: none;
     background: transparent;
     color: white;
     caret-color: white;
@@ -13,10 +17,10 @@ input[type="search"]{
 
 .search-button{
     padding:8px;
-    background-color: #e52a6f;
+    background-color: #fe1743;
     color: white;
     cursor: pointer;
-    border-bottom: 1px solid #e52a6f;
+    border-bottom: 1px solid #fe1743;
 }
 
 ::-webkit-input-placeholder {

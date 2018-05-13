@@ -1,0 +1,51 @@
+.list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.single-list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    flex:30%;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2px;
+    border-bottom:3px solid #fe1743; 
+    background-color: rgba(255, 255, 255, 0.25)
+}
+
+.li-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single-list-item>div,.li-info-container>div{
+    padding: 4px;
+}
+
+.li-temp-text{
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.li-weather-icon{
+    align-self: center;
+    font-size: 3.2rem;
+}
+
+.li-day,.li-desc{
+    align-self: center;
+    text-transform:capitalize;    
+}
+
+@media all and (max-width:480px){
+    .single-list-item{
+        flex: 50%;
+    }
+}

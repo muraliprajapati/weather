@@ -1,19 +1,20 @@
 const webpack = require('webpack');
 const path = require('path');
-const config = require('./config');
 
+const DIR_SRC = path.join(__dirname, 'src');
+const DIR_DIST = path.join(__dirname, 'dist');
 
 const webpackConfig = {
-    entry: path.join(config.DIR_SRC, 'index.js'),
+    entry: path.join(DIR_SRC, 'index.js'),
     output: {
-        path: config.DIR_DIST,
+        path: DIR_DIST,
         filename: 'bundle.js'
     },
     module: {
         rules: []
     },
     devServer: {
-        contentBase: config.DIR_DIST
+        contentBase: DIR_DIST
     }
 }
 
